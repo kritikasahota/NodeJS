@@ -1,0 +1,109 @@
+==========================================
+LOCAL VS GLOBAL PACKAGE INSTALLATION
+==========================================
+NPM packages can be installed in two ways:
+1. Local installation
+2. Global installation
+
+------------------------------------------
+1. LOCAL PACKAGE INSTALLATION
+------------------------------------------
+
+A package installed locally is installed inside the current project.
+
+Command:
+npm install package-name
+
+Example:
+npm install figlet
+
+The package is installed inside: node_modules
+
+The package is also added to: package.json and its exact dependency information is recorded in:
+package-lock.json
+
+------------------------------------------
+Example
+------------------------------------------
+
+npm install figlet
+
+Project structure:
+
+my-project
+│
+├── node_modules
+│   └── figlet
+│
+├── package-lock.json
+├── package.json
+└── app.js
+
+
+A locally installed package is normally used inside that particular project.
+
+
+------------------------------------------
+2. GLOBAL PACKAGE INSTALLATION
+------------------------------------------
+
+A package installed globally is installed for use across the system rather than being added to one particular project.
+
+Command:
+npm install -g package-name
+
+Here: -g means: global
+
+------------------------------------------
+Example
+------------------------------------------
+
+npm install -g package-name
+
+The package is installed globally and is not added to the current project's package.json dependencies.
+
+------------------------------------------
+LOCAL VS GLOBAL
+------------------------------------------
+
+LOCAL:
+
+npm install package-name
+
+- Installed inside the project
+- Stored in node_modules
+- Added to package.json
+- Project-specific dependency
+
+
+GLOBAL:
+
+npm install -g package-name
+
+- Installed globally
+- Available for use across projects
+- Not added to the current project's dependencies
+- Generally used for command-line tools
+
+
+------------------------------------------
+COMMANDS TO REMEMBER
+------------------------------------------
+
+Local installation:
+npm install package-name
+
+Global installation:
+npm install -g package-name
+
+Check globally installed packages:
+npm list -g --depth=0
+
+Check locally installed packages:
+npm list
+
+Remove a local package:
+npm uninstall package-name
+
+Remove a global package:
+npm uninstall -g package-name
