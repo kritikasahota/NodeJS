@@ -1,0 +1,90 @@
+==========================================
+NODE.JS REPL
+==========================================
+
+REPL stands for:
+Read
+Evaluate
+Print
+Loop
+
+Node.js REPL provides an interactive environment where we can enter JavaScript code directly in the
+terminal and immediately see the result.
+
+It is useful for:
+- Testing JavaScript expressions
+- Trying small pieces of code
+- Checking Node.js behavior
+- Experimenting without creating a .js file
+
+
+------------------------------------------
+STARTING NODE REPL
+------------------------------------------
+
+To start the Node.js REPL, type the following command in the terminal:
+
+node
+
+Example:
+PS F:\NODE JS> node
+
+After starting, the terminal shows:
+>
+
+------------------------------------------
+REPL EXAMPLES
+------------------------------------------
+
+We can perform JavaScript calculations directly inside the REPL.
+> 10 + 20
+
+Output:
+30
+
+We can create variables:
+> let name = "Kritika"
+
+The variable is now available in the REPL.
+
+We can access its value:
+> name
+
+Output:
+'Kritika'
+
+We can also execute JavaScript statements:
+> console.log("Hello Node.js")
+
+Output:
+Hello Node.js
+
+------------------------------------------
+EXITING NODE REPL
+------------------------------------------
+
+To exit the Node.js REPL, type:
+.exit
+
+Example:
+> .exit
+
+After exiting, we return to the normal terminal.
+
+------------------------------------------
+IMPORTANT
+------------------------------------------
+
+REPL is different from running a JavaScript file.
+
+REPL:
+node
+> 10 + 20
+30
+
+JavaScript file:
+node app.js
+
+In REPL, JavaScript code is entered and executed directly in the terminal.
+
+In a JavaScript file, we write the code inside a .js file and execute the file using Node.js.
