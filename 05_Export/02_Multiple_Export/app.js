@@ -1,4 +1,4 @@
-const data = require("./02_multiple_export");
+const data = require("./student.js");
 
 console.log(data.name);
 
