@@ -1,3 +1,3 @@
-const name = require("./01_export");
+const name = require("./student.js");
 
 console.log(name);
