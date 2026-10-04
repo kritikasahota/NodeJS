@@ -1,4 +1,4 @@
-const data = require("./03_multiple_export");
+const data = require("./02_multiple_export");
 
 console.log(data.name);
 
